@@ -1,0 +1,118 @@
+body{
+	background-color: bisque;
+}
+.dark_mode{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  right: 280px;
+  top: 0;
+  left: -10px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.dark_mode::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  background-color: black;
+  color: white;
+  transform: translateX(0px);
+  transition: 0.7s ease;
+}
+.dark_mode.active::before{
+  left: 24px;
+  background: white;
+  transform: translateX(35px);
+  transition: 0.7s ease;
+}
+body.night{
+  background: #092c3e;
+  color: #fff;
+}
+.title, #total{
+	float: left;
+	font-size: 24px;
+}
+.clear{
+	clear: both;
+}
+
+.main{
+	margin:70px;
+	text-align: center;
+}
+
+.frame-item{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	text-align: center;
+}
+
+.frame-item-1, .frame-item-2, .frame-item-3{
+ position: relative;
+ border: solid 3px black;
+ width: 300px;
+ height: 320px;
+ float: left;
+ margin: 20px;
+ margin-top: 3px;
+ padding: 5px;
+}
+
+.thumb-icon{
+ position: relative;
+ width: 280px;
+ height: 200px;
+}
+
+.item-name{
+	position: absolute;
+	left: 30px;
+	font-size: 24px;
+	bottom: 60px;
+}
+
+
+input[type=radio]{
+  width: 35px;
+  height: 35px;
+}
+
+.size{
+	float: left;
+	margin-right: 80px;
+}
+.label{
+	float: left;
+  margin-left:5px;
+	margin-top: 5px; 
+	margin-right: 70px;
+}
+
+td{
+	text-align: left;
+}
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+/* #total{
+  margin-top: 50px;
+  margin-left: -30px;
+} */
+
+
+
+
+

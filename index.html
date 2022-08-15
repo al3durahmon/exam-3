@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Pizza</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Link</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light text-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main" id="home">
+    <h1 class="text-center mt-5">==== Order Your Pizza Here ====</h1>
+    <label class="dark_mode mt-3" id="dark-change">
+    </label>
+    <hr>
+    <h2 class="title ms-5">Pizza</h2>
+    <section class="frame-item ps-5">
+      <div class="frame-item-1">
+        <img src="https://i123.photobucket.com/albums/o317/XtremeGamerX3/pizza.jpg" class="thumb-icon">
+        <h3 class="item-name">Pizza 1</h3>
+        <h4 class="item-prize mt-3 float-end">$8</h4>
+        <input id="item-1" class="item mt-5 ms-5" type="radio" name="item">
+      </div>
+      <div class="frame-item-2">
+        <img src="https://i909.photobucket.com/albums/ac294/felixbone_2010/meatlovers1.jpg" class="thumb-icon">
+        <h3 class="item-name">Pizza 2</h3>
+        <h4 class="item-prize mt-3 float-end">$10</h4>
+        <input id="item-2" class="item mt-5 ms-5" type="radio" name="item">
+      </div>
+      <div class="frame-item-3">
+        <img src="https://i833.photobucket.com/albums/zz252/zero6000/pizza/20801971_3300f4e685.jpg" class="thumb-icon">
+        <h3 class="frame__title item-name">Pizza 3</h3>
+        <h4 class="frame__title item-prize mt-3 float-end">$12</h4>
+        <input id="frame__input item-3" class="item mt-5 ms-5" type="radio" name="item">
+      </div>
+    </section>
+    <div class="clear"></div>
+    <section class="size float-start ">
+      <h2 class="title float">Size</h2>
+      <div class="clear"></div>
+      <input id="small" class="size" type="radio" name="size">
+      <input id="medium" class="size" type="radio" name="size">
+      <input id="large" class="size" type="radio" name="size">
+      <div class="clear"></div>
+      <label for="small" class="label ">Small</label>
+      <label for="medium" class="label">Medium</label>
+      <label for="large" class="label">Large</label>
+    </section>
+    <div class="clear"></div>
+    <section class="toppings mt-5">
+      <h2 class="title mb-3">Toppings</h2>
+      <div class="clear"></div>
+      <table>
+        <tr>
+          <td>
+            <input id="avocado" class="topping" type="checkbox" name="topping" value="1">
+            <label>Avocado</label>
+          </td>
+          <td>
+            <input id="lobster" class="topping" type="checkbox" name="topping" value="2">
+            <label>Lobster</label>
+          </td>
+          <td>
+            <input id="bacon" class="topping" type="checkbox" name="topping" value="3">
+            <label>Bacon</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="broccoli" class="topping" type="checkbox" name="topping" value="1">
+            <label>Broccoli</label>
+          </td>
+          <td>
+            <input id="oyster" class="topping" type="checkbox" name="topping" value="2">
+            <label>Oyster</label>
+          </td>
+          <td>
+            <input id="duck" class="topping" type="checkbox" name="topping" value="3">
+            <label>Duck</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="onions" class="topping" type="checkbox" name="topping" value="1">
+            <label>Onions</label>
+          </td>
+          <td>
+            <input id="salmon" class="topping" type="checkbox" name="topping" value="2">
+            <label>Salmon</label>
+          </td>
+          <td>
+            <input id="ham" class="topping" type="checkbox" name="topping" value="3">
+            <label>Ham</label>
+          </td>
+        <tr>
+          <td>
+            <input id="zucchini" class="topping" type="checkbox" name="topping" value="1">
+            <label>Zucchini</label>
+          </td>
+          <td>
+            <input id="tuna" class="topping" type="checkbox" name="topping" value="2">
+            <label>Tuna</label>
+          </td>
+          <td>
+            <input id="sausage" class="topping" type="checkbox" name="topping" value="3">
+            <label>Sausage</label>
+          </td>
+        </tr>
+        </tr>
+      </table>
+    </section>
+    <textarea class="form-control mt-5 mb-5" placeholder="Leave a comment here" id="floatingTextarea2"
+      style="height: 100px"></textarea>
+    <section class="total__price d-flex align-items-center">
+      <h2 class="title mb-3 pe-3">Price:</h2>
+      <p id="total">$0</p>
+    </section>
+    <button class="btn btn-primary ms-5" type="submit">Submit</button>
+    <a href="index.html" class="btn btn-danger">Clear</a>
+    <div class="form-floating">
+    </div>
+  </div>
+
+
+
+
+  <script src="./js/app.js"></script>
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function () {
+      darkMode.classList.toggle('active');
+      content.classList.toggle('night');
+    })
+
+  </script>
+</body>
+
+</html>
